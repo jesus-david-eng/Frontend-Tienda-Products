@@ -1,0 +1,22 @@
+<nav  class="navbar navbar-expand-sm  navbar-dark" style="background-color: rgb(43, 46, 54)">
+  
+    <a class="navbar-brand" href="#" [routerLink]="['addProduct']">
+      <img src="../assets/app.png" style="max-width: 30px"  alt="" >
+    </a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" style="color: rgb(255, 253, 253)" [routerLink]="['Productos']">Products <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link"  style="color: rgb(255, 255, 255) "[routerLink]="['addProduct']">Add Product</a>
+        </li>
+      </ul>
+
+      <form >
+        <a  style="background-color:  #d4d7e4" [routerLink]="['login']"  class="btn" type="submit"  >Sing In</a>
+      </form>
+      
+    </div>
+  </nav>

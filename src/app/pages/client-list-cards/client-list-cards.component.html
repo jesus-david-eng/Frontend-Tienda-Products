@@ -1,0 +1,17 @@
+  
+<div class="contenedor">
+  <div class="card border-dark mb-3" style="width: 18rem; max-height: 24rem" *ngFor="let clientes of clients, let i = index">
+  <div class="card-header">
+  <img [src]="clientes.urlLogo"  class="card-img-top img-fluid" alt="Responsive image">
+  </div>
+    <div class="card-body" >    
+      <h3 class="card-text">{{ clientes.name }}</h3>
+      <p class="card-text">{{ clientes.description }}</p>   
+      <button (click)="editar(clientes.id)" class="btn btn-outline-primary btn-block"> Ver mas.. </button>
+    </div>
+</div>
+</div>
+
+
+
+

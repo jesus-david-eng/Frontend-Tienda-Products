@@ -1,0 +1,22 @@
+
+.card{
+    margin: 15px;
+        
+}
+.contenedor{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-center;
+}
+
+.card-header{
+    height: 200px;
+   
+    
+}
+.card-img-top{
+    height: 100%;
+}
+
+

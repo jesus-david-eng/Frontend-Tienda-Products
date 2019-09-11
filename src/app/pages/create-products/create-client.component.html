@@ -1,0 +1,40 @@
+
+
+<div class="container col-md-7" style="margin-top: 50px"> 
+    <div class="card" >       
+            <div class="card-header" style="background-color: #d4d7e4">
+                  <h3 style="color: rgb(22, 18, 18)">Crear producto</h3>
+            </div>   
+
+ <div class="card-body">
+<form>
+    <div class="form-group"> 
+        <label for="validationDefault01">Name Product</label>
+        <input  [(ngModel)]="cliente.name" name="name"  type="text" class="form-control" minlength="5"  required #nombre="ngModel" required>     
+      </div>
+
+      <div class="form-group">
+        <label for="validationDefault02">Description</label>
+        <input  [(ngModel)]="cliente.description" name="nameO" type="text" class="form-control" required>
+      </div>
+
+    <div class="form-group">
+        <label for="validationDefault03">Url logo</label>
+        <input  [(ngModel)]="cliente.urlLogo" name="urlLogo" type="text" class="form-control" required>
+      </div>
+
+    <div class="form-group">
+            <label for="validationDefault05">Price</label>
+            <input  [(ngModel)]="cliente.price" name="nameOw" type="text" class="form-control" required>
+     </div>
+
+     <div class="form-group">
+            <label for="validationDefault05">Marca</label>
+            <input  [(ngModel)]="cliente.marca" name="apellido" type="text" class="form-control" required>
+     </div>
+ 
+
+    
+    <button (click)="Guardar()" class="btn btn-danger">Guardar</button>
+  </form>      
+</div>
